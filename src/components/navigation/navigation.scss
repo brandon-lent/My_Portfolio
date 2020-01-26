@@ -1,0 +1,19 @@
+.navbar {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    a {
+      margin-right: 1.5rem;
+      font-size: 2.4rem;
+    }
+  }
+}
