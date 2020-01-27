@@ -1,5 +1,7 @@
-@import "./variables.scss";
+@import "variables";
 
-@import "./reset.scss";
+@import "reset";
 
-@import "./global.scss";
+@import "global";
+@import "base";
+@import "navigation";

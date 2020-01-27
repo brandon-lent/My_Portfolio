@@ -12,7 +12,8 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  color: $main-font-color;
+  color: $font-color;
+  background-color: $background-color;
 }
 
 h1 {
@@ -35,5 +36,5 @@ p {
 }
 a {
   text-decoration: none;
-  color: $main-font-color;
+  color: $font-color;
 }

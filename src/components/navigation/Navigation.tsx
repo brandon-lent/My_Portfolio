@@ -3,9 +3,6 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
-// Styles
-import "./navigation.scss";
-
 interface NavigationProps {}
 
 export const Navigation: React.FC<NavigationProps> = ({}) => {

@@ -15,23 +15,25 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navigation />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/consulting">
-          <Consulting />
-        </Route>
-        <Route path="/my-work">
-          <MyWork />
-        </Route>
-        <Route path="/case-studies">
-          <CaseStudies />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-      </Switch>
+      <div className="base">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/consulting">
+            <Consulting />
+          </Route>
+          <Route path="/my-work">
+            <MyWork />
+          </Route>
+          <Route path="/case-studies">
+            <CaseStudies />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 };
