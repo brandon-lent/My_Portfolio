@@ -3,6 +3,9 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
+// Logo
+import Logo from "../../assets/Logo.png";
+
 interface NavigationProps {}
 
 export const Navigation: React.FC<NavigationProps> = ({}) => {
@@ -10,7 +13,9 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
     <nav className="navbar">
       <ul>
         <li>
-          <Link to="/">Snook Development</Link>
+          <Link to="/">
+            <img src={Logo} alt="Brandon Lent, Software Developer, Logo." />
+          </Link>
         </li>
       </ul>
       <ul>

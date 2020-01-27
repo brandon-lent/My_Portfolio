@@ -1,0 +1,58 @@
+.homepage {
+  margin-top: 18rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  span {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+  .reactSpan {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #61dafb;
+    &:hover {
+      color: #55b8d3ec;
+    }
+  }
+  .nodeSpan {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #73aa63;
+    &:hover {
+      color: #74aa63c5;
+    }
+  }
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.intro-2 {
+  width: 30%;
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+    line-height: 3rem;
+  }
+  span {
+    color: #e3710e;
+  }
+}
