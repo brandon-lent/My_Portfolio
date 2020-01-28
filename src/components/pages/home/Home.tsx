@@ -39,7 +39,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
           </p>
         </section>
       </article>
-      <article>
+      <article className="contact-container">
         <Contact />
       </article>
     </div>

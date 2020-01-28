@@ -8,17 +8,25 @@ export const Contact: React.FC<ContactProps> = ({}) => {
       <p>Contact Me</p>
       <div className="contact-input">
         <label htmlFor="email">E-mail</label>
-        <input id="email"></input>
+        <input placeholder="E-mail" id="email"></input>
       </div>
       <div className="contact-input">
         <label htmlFor="name">Name</label>
-        <input id="name"></input>
+        <input placeholder="Name" id="name"></input>
       </div>
       <div className="contact-input">
         <label htmlFor="message">Message</label>
-        <textarea rows={5} id="message"></textarea>
+        <textarea
+          placeholder="Enter your message.."
+          rows={5}
+          id="message"
+        ></textarea>
       </div>
-      <button>Send</button>
+      <div className="contact-input">
+        <button type="button" className="button button-outline">
+          Send
+        </button>
+      </div>
     </div>
   );
 };
