@@ -1,0 +1,45 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18rem;
+  p {
+    margin-left: 12rem;
+    font-size: 2.5rem;
+  }
+  button {
+    width: 10rem;
+    padding: 1rem;
+  }
+}
+
+.contact-input {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+
+  label {
+    font-size: 1.8rem;
+
+    width: 7rem;
+  }
+
+  input {
+    border-style: none;
+    border: 1px solid $font-color;
+
+    font-family: $font-stack;
+    font-size: 2rem;
+
+    -webkit-box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.2);
+  }
+  textarea {
+    border-style: ridge;
+    resize: none;
+    height: auto;
+    font-family: $font-stack;
+    font-size: 2rem;
+  }
+}

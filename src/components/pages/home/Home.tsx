@@ -1,5 +1,8 @@
 import React from "react";
 
+// Components
+import { Contact } from "../../contact/Contact";
+
 interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = ({}) => {
@@ -7,7 +10,6 @@ export const Home: React.FC<HomeProps> = ({}) => {
     <div className="homepage">
       <article>
         <section className="intro">
-          {/* <h1>Welcome</h1> */}
           <p>
             I create <span>Scalable</span>, <span>Maintainable</span>, and{" "}
             <span>Fast</span> applications <br /> with{" "}
@@ -36,6 +38,9 @@ export const Home: React.FC<HomeProps> = ({}) => {
             to the United States.
           </p>
         </section>
+      </article>
+      <article>
+        <Contact />
       </article>
     </div>
   );
