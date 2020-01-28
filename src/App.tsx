@@ -10,11 +10,13 @@ import { Consulting } from "./components/pages/consulting/Consulting";
 import { MyWork } from "./components/pages/myWork/MyWork";
 import { CaseStudies } from "./components/pages/caseStudies/CaseStudies";
 import { About } from "./components/pages/about/About";
+import { Footer } from "./components/footer/Footer";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navigation />
+
       <div className="base">
         <Switch>
           <Route exact path="/">
@@ -34,6 +36,7 @@ const App: React.FC = () => {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 };
