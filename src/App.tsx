@@ -16,7 +16,6 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navigation />
-
       <div className="base">
         <Switch>
           <Route exact path="/">
