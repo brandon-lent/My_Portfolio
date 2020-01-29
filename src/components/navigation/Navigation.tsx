@@ -29,7 +29,7 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
           <Link to="/case-studies">Case Studies</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">Philosophy</Link>
         </li>
       </ul>
     </nav>

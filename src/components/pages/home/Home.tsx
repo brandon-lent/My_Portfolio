@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import { Contact } from "../../contact/Contact";
+import { HomeContent } from "./HomeContent";
 
 interface HomeProps {}
 
@@ -39,9 +40,12 @@ export const Home: React.FC<HomeProps> = ({}) => {
           </p>
         </section>
       </article>
-      <article className="contact-container">
-        <Contact />
+      <article className="home-content">
+        <HomeContent />
       </article>
+      {/* <article className="contact-container">
+        <Contact />
+      </article> */}
     </div>
   );
 };
