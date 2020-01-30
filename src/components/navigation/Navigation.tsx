@@ -18,7 +18,7 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
           </Link>
         </li>
       </ul>
-      <ul>
+      {/* <ul>
         <li>
           <Link to="/consulting">Consulting</Link>
         </li>
@@ -31,7 +31,7 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
         <li>
           <Link to="/about">Philosophy</Link>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };

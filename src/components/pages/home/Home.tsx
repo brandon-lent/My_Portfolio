@@ -12,11 +12,10 @@ export const Home: React.FC<HomeProps> = ({}) => {
       <article>
         <section className="intro">
           <p>
-            I create <span>Scalable</span>, <span>Maintainable</span>, and{" "}
+            I create <span>Scale-able</span>, <span>Maintainable</span>, and{" "}
             <span>Fast</span> applications <br /> with{" "}
             <span className="reactSpan">React</span> and{" "}
-            <span className="nodeSpan">Node</span> for startups and top
-            companies.
+            <span className="nodeSpan">Node</span>.
           </p>
         </section>
       </article>
