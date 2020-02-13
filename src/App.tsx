@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Routing
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -12,8 +12,35 @@ import { CaseStudies } from "./components/pages/caseStudies/CaseStudies";
 import { About } from "./components/pages/about/About";
 import { Footer } from "./components/footer/Footer";
 
+// Util
+import { customLog } from "./util/customLog";
+
+const socials = [
+  {
+    website: "LinkedIn",
+    URL: "https://www.linkedin.com/in/brandon-lent/"
+  },
+  {
+    website: "Github",
+    URL: "https://github.com/Blent1050"
+  }
+];
+
 const App: React.FC = () => {
   const [isLightTheme, setisLightTheme] = useState<boolean>(true);
+
+  // Prevents console from re-running on component re-renders.
+  useEffect(() => {
+    customLog("👨‍💻 Welcome to my Website 👨‍💻", "orange");
+    customLog("I'm open to a variety of opporunities", "orange");
+    customLog(
+      "Just email me and I'll get back to you as soon as possible.",
+      "orange"
+    );
+    customLog("Hello@Brandonlent.com", "orange");
+    customLog("Other Profiles:", "orange");
+    console.table(socials);
+  }, []);
 
   return (
     <div className={isLightTheme ? "themeWrapper" : "darkTheme themeWrapper"}>
