@@ -42,11 +42,11 @@ export const Navigation: React.FC<NavigationProps> = ({
             Case Studies
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="hover-border" to="/contact">
             Contact
           </Link>
-        </li>
+        </li> */}
         <li>
           <img
             className="themeToggle"

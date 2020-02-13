@@ -1,4 +1,5 @@
 .homepage {
+  height: 73.9vh;
   @include breakpoint(laptop) {
     width: 0 auto;
   }

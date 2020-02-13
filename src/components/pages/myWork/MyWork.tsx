@@ -1,13 +1,14 @@
 import React from "react";
 
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
+import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
 
 interface MyWorkProps {}
 
 export const MyWork: React.FC<MyWorkProps> = () => {
   return (
     <div className="my-work">
-      <h2>My Work</h2>
+      <h2>My Public Work</h2>
       <section className="recent-work">
         <div className="work-project">
           <h4>
@@ -45,13 +46,39 @@ export const MyWork: React.FC<MyWorkProps> = () => {
           </a>
         </div>
         <div className="work-project">
-          <h4>Good Time Journal</h4>
-        </div>
-        <div className="work-project">
-          <h4>Park Buddy</h4>
-        </div>
-        <div className="work-project">
-          <h4>Lambdagram</h4>
+          <h4>
+            Good Time Journal
+            <div>
+              <a
+                className="hover-border"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://goodtimejournal.netlify.com/"
+              >
+                View Project
+              </a>
+              <a
+                className="hover-border"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/GoodTimeJournal"
+              >
+                View Code
+              </a>
+            </div>
+          </h4>
+          <a
+            className="remove-attr"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goodtimejournal.netlify.com/"
+          >
+            <img
+              className="border"
+              src={GoodTimeJournalImage}
+              alt="A project I worked on called Good time journal"
+            />
+          </a>
         </div>
       </section>
     </div>
