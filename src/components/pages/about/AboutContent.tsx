@@ -2,7 +2,7 @@ import React from "react";
 
 interface Home_ContentProps {}
 
-export const HomeContent: React.FC<Home_ContentProps> = () => {
+export const AboutContent: React.FC<Home_ContentProps> = () => {
   return (
     <>
       <section className="center">

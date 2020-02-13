@@ -1,4 +1,7 @@
 @import "variables";
+@import "mixins";
+
+// Global / Reset styles
 @import "reset";
 @import "global";
 @import "base";
@@ -9,3 +12,8 @@
 @import "footer";
 @import "homepage";
 @import "mywork";
+@import "about";
+
+// Reusable Components
+@import "components/linkblock";
+@import "components/buttonLink.scss";

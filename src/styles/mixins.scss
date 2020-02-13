@@ -1,0 +1,23 @@
+// Breakpoint mixin
+@mixin breakpoint($point) {
+  @if $point == laptop {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: 980px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 736px) {
+      @content;
+    }
+  }
+}
+
+@mixin borderAnimation($color) {
+  &:hover {
+    animation: 2s ease-in animate;
+    border-bottom: 1px solid $color;
+  }
+}

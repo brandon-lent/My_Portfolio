@@ -1,11 +1,52 @@
 .base {
-  margin-top: 15rem;
+  padding-top: 15rem;
   margin-left: 30rem;
   margin-right: 30rem;
+  height: 100vh;
+  @include breakpoint(tablet) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  @include breakpoint(mobile) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
-  @media only screen and (max-width: 1035px) {
-    margin-top: 15rem;
-    margin-left: 0;
-    margin-right: 0;
+.border {
+  border: 3px solid $font-color;
+}
+// Themes
+
+.darkTheme {
+  background-color: $dark-background-color;
+  color: $dark-font-color;
+  .navbar {
+    background-color: $dark-background-color;
+    color: $dark-font-color;
+  }
+  a:visited {
+    color: $dark-font-color;
+  }
+  footer {
+    background-color: $dark-background-color;
+  }
+
+  .linkblock {
+    &:hover {
+      background-color: #464b66;
+    }
+  }
+  .linkImage {
+    background-image: url("../assets/lightLink.png");
+  }
+  .hover-border {
+    @include borderAnimation($dark-font-color);
+  }
+  .work-seperator {
+    border: 1px solid $dark-font-color;
+  }
+  .border {
+    border: 3px solid $dark-font-color;
   }
 }

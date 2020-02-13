@@ -1,0 +1,28 @@
+.linkblock {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ebeced;
+  }
+
+  img {
+    position: relative;
+    width: 2.5rem;
+    margin: 0 1rem;
+  }
+}
+
+.linkImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("../../assets/darkLink.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1rem;
+}

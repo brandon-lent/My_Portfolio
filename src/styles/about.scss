@@ -1,0 +1,107 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  span {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+  .react-span {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #61dafb;
+    &:hover {
+      color: #55b8d3ec;
+    }
+  }
+  .node-span {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #73aa63;
+    &:hover {
+      color: #74aa63c5;
+    }
+  }
+  @include breakpoint(laptop) {
+    margin: 5rem 0;
+    width: 0 auto;
+  }
+}
+
+.about-intro-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+  text-align: center;
+
+  @include breakpoint(laptop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.about-intro-2 {
+  width: 30%;
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+    line-height: 3rem;
+  }
+  span {
+    color: #e3710e;
+    font-size: 1.6rem;
+  }
+  @include breakpoint(laptop) {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  section {
+    padding: 2rem;
+    width: 50%;
+  }
+  div {
+    border: 1px solid black;
+  }
+}
+
+.see-how {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  border: 1px solid #d4d7d9;
+  font-size: 2.4rem;
+  padding: 1.6rem 2.4rem;
+  background: url("../assets/Btn-background.png") center center no-repeat;
+
+  &:hover {
+    border: 1px solid rgb(129, 131, 133);
+    background: url("../assets/Btn-background-hover.png") center center
+      no-repeat;
+  }
+  img {
+    width: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  @include breakpoint(laptop) {
+    font-size: 1.7rem;
+  }
+}

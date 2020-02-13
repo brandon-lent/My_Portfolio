@@ -7,7 +7,6 @@
 html {
   font-style: $font-stack;
   font-size: 62.5%;
-  background-image: url("../assets/html_background.svg");
 }
 
 html,
@@ -16,7 +15,7 @@ body {
   color: $font-color;
   background-color: $background-color;
   scroll-behavior: smooth;
-  @media (max-width: 800px) {
+  @include breakpoint(tablet) {
     width: 100%;
     margin: 0;
   }
@@ -27,6 +26,7 @@ h1 {
 }
 h2 {
   font-size: 4rem;
+  padding-bottom: 4rem;
 }
 h3 {
   font-size: 3.4rem;
@@ -34,15 +34,31 @@ h3 {
 h4 {
   font-size: 2.8rem;
 }
-h5 {
-  font-size: 2.2rem;
-}
+a,
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 a {
   text-decoration: none;
-  color: $font-color;
+}
+p {
+  line-height: 3rem;
+}
+.section-seperator {
+  padding-top: 4rem;
+  h3 {
+    text-align: center;
+  }
+}
+
+.hover-border {
+  @include borderAnimation($font-color);
 }
 /* Default button */
 .button {
@@ -107,4 +123,9 @@ a {
 .center {
   display: flex;
   justify-content: center;
+}
+
+.remove-attr {
+  margin: 0;
+  padding: 0;
 }

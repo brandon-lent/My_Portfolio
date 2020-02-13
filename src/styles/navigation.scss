@@ -1,7 +1,6 @@
 .navbar {
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(#ffffff, 0.5);
   backdrop-filter: blur(2px);
   display: flex;
@@ -15,16 +14,21 @@
 
   ul {
     display: flex;
+    align-items: flex-end;
   }
+  img {
+    width: 100px;
+    margin-right: 2rem;
+    margin-left: 1rem;
 
-  li {
-    img {
-      width: 200px;
-      margin-left: 2rem;
+    &:hover {
+      cursor: pointer;
     }
-    a {
-      margin-right: 2rem;
-      font-size: 2rem;
-    }
+  }
+  a {
+    margin-right: 2rem;
+  }
+  .themeToggle {
+    width: 30px;
   }
 }
