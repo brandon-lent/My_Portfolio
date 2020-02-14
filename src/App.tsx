@@ -15,17 +15,6 @@ import { Footer } from "./components/footer/Footer";
 // Util
 import { customLog } from "./util/customLog";
 
-const socials = [
-  {
-    website: "LinkedIn",
-    URL: "https://www.linkedin.com/in/brandon-lent/"
-  },
-  {
-    website: "Github",
-    URL: "https://github.com/Blent1050"
-  }
-];
-
 const App: React.FC = () => {
   const [isLightTheme, setisLightTheme] = useState<boolean>(true);
 
@@ -75,3 +64,14 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+const socials = [
+  {
+    website: "LinkedIn",
+    URL: "https://www.linkedin.com/in/brandon-lent/"
+  },
+  {
+    website: "Github",
+    URL: "https://github.com/Blent1050"
+  }
+];

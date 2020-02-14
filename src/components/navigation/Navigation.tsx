@@ -25,7 +25,13 @@ export const Navigation: React.FC<NavigationProps> = ({
         <li>
           <Link to="/">
             <img
-              src={isLightTheme ? DarkLogo : LightLogo}
+              className={isLightTheme ? "hide" : ""}
+              src={LightLogo}
+              alt="Brandon Lent, Software Developer, Logo."
+            />
+            <img
+              className={isLightTheme ? "" : "hide"}
+              src={DarkLogo}
               alt="Brandon Lent, Software Developer, Logo."
             />
           </Link>
