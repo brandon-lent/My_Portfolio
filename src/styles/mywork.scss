@@ -8,9 +8,9 @@
 
 .work-project {
   width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   h4 {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,5 +34,20 @@
         margin-right: 2rem;
       }
     }
+  }
+}
+
+.project-description {
+  width: 75%;
+  padding: 2rem 0;
+  a {
+    margin: 0;
+  }
+}
+
+.project-links {
+  margin-top: 2rem;
+  a {
+    margin-left: 0;
   }
 }

@@ -17,6 +17,16 @@
     margin: 0 1rem;
   }
 }
+.inlineLinkBlock {
+  padding: 0.5rem 0.5rem;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ebeced;
+  }
+}
 
 .linkImage {
   width: 2.5rem;
@@ -25,4 +35,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 1rem;
+}
+.linkImageSmall {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url("../../assets/darkLink.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0.5rem;
 }
