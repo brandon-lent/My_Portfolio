@@ -32,9 +32,9 @@ const App: React.FC = () => {
   // Prevents console from re-running on component re-renders.
   useEffect(() => {
     customLog("👨‍💻 Welcome to my Website 👨‍💻", "orange");
-    customLog("I'm open to a variety of opporunities", "orange");
+    customLog("I'm open to a variety of opportunities", "orange");
     customLog(
-      "Just email me and I'll get back to you as soon as possible.",
+      "Just email me and I'll get back to you as soon as possible",
       "orange"
     );
     customLog("Hello@Brandonlent.com", "orange");
