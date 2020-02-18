@@ -58,14 +58,15 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               <div className="linkImage" />
               View Code
             </a>
-            <Link
+            <a
               className="linkblock"
+              target="blank"
               rel="noopener noreferrer"
-              to="/case-studies/trainingbot"
+              href="https://medium.com/@blent1050"
             >
               <div className="linkImage" />
-              Case Study
-            </Link>
+              View Development Journal
+            </a>
           </div>
         </div>
 

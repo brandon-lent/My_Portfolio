@@ -13,10 +13,21 @@ export const CaseStudies: React.FC<CaseStudiesProps> = () => {
   return (
     <div className="caseStudies">
       <h2>Writing</h2>
-      <section>
+      <p>
+        Hello, this is a work in progress. All future articles I publish will be
+        on this page. To view my past articles, go{" "}
+        <a
+          className="italic"
+          target="blank"
+          href="https://medium.com/@blent1050"
+        >
+          here
+        </a>
+      </p>
+      {/* <section>
         <SearchBar search={search} setSearch={setSearch} />
-      </section>
-      {writings.map(writing => {
+      </section> */}
+      {/* {writings.map(writing => {
         return (
           <section className="writings">
             <h3>{writing.title}</h3>
@@ -24,7 +35,7 @@ export const CaseStudies: React.FC<CaseStudiesProps> = () => {
             <hr />
           </section>
         );
-      })}
+      })} */}
     </div>
   );
 };
