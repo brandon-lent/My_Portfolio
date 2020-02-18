@@ -45,7 +45,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         </li>
         <li>
           <Link className="hover-border" to="/case-studies">
-            Case Studies
+            Writing
           </Link>
         </li>
         {/* <li>

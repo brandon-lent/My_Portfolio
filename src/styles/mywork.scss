@@ -43,6 +43,9 @@
   a {
     margin: 0;
   }
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 
 .project-links {

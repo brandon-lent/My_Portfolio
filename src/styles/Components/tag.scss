@@ -1,0 +1,30 @@
+.tag {
+  display: flex;
+  p {
+    margin-right: 1rem;
+    width: 100px;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid $font-color;
+    font-size: 1.6rem;
+  }
+}
+
+.react {
+  color: #61dafb;
+}
+.redux {
+  color: #764abc;
+}
+.node {
+  color: #6da55f;
+}
+.express {
+  color: black;
+}
+.auth {
+  color: #eb5424;
+}
+.posgresql {
+  color: #336791;
+}

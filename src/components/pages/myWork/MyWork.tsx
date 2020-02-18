@@ -73,7 +73,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
           <h4 className="bold">Good Time Journal</h4>
           <hr />
           <p className="project-description">
-            Based off of Stanfords{" "}
+            Based off Stanfords{" "}
             <a href="http://lifedesignlab.stanford.edu/">
               <span className="italic inlineLinkBlock">Design Your Life</span>
             </a>{" "}
