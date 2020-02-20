@@ -96,6 +96,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               className={loading ? "" : "border"}
               src={GoodTimeJournalImage}
               alt="A project I worked on called Training Bot"
+              onLoad={e => setLoading(false)}
             />
           </a>
           <div className="project-links">
