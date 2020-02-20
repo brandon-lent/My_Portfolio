@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Lazy Load
-import { LazyLoadImage } from "@tjoskar/react-lazyload-img";
+import LazyLoad from "react-lazyload";
 
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
 import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
@@ -30,14 +30,15 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             rel="noopener noreferrer"
             href="https://www.trainingbot.co"
           >
-            <LazyLoadImage
-              width="100%"
-              height="100%"
-              className="border"
-              defaultImage={""}
-              image={TrainingBotImage}
-              alt="A project I worked on called Training Bot"
-            />
+            <LazyLoad height={500} once>
+              <img
+                width="100%"
+                height="100%"
+                className="border"
+                src={TrainingBotImage}
+                alt="A project I worked on called Training Bot"
+              />
+            </LazyLoad>
           </a>
           <div className="project-links">
             <a
@@ -87,14 +88,15 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             rel="noopener noreferrer"
             href="https://goodtimejournal.netlify.com/"
           >
-            <LazyLoadImage
-              width="100%"
-              height="100%"
-              className="border"
-              defaultImage={""}
-              image={GoodTimeJournalImage}
-              alt="A project I worked on called Training Bot"
-            />
+            <LazyLoad height={300} once>
+              <img
+                width="100%"
+                height="100%"
+                className="border"
+                src={GoodTimeJournalImage}
+                alt="A project I worked on called Training Bot"
+              />
+            </LazyLoad>
           </a>
           <div className="project-links">
             <a
