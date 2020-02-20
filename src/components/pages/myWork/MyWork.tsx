@@ -3,9 +3,6 @@ import React, { useState, useEffect } from "react";
 //Routing
 import { Link } from "react-router-dom";
 
-// Lazy Load
-import LazyLoad from "react-lazyload";
-
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
 import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
 
@@ -14,9 +11,6 @@ interface MyWorkProps {}
 export const MyWork: React.FC<MyWorkProps> = () => {
   const [loading, setLoading] = useState(true);
 
-  const changeLoadingState = () => {
-    setLoading(false);
-  };
   return (
     <div className="my-work">
       <h2>My Public Work</h2>
@@ -36,16 +30,15 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             href="https://www.trainingbot.co"
           >
             {loading && <div className="border loading-image"></div>}
-            <LazyLoad height={500} once>
-              <img
-                width="100%"
-                height="100%"
-                className={loading ? "" : "border"}
-                src={TrainingBotImage}
-                alt="A project I worked on called Training Bot"
-                onLoad={e => setLoading(false)}
-              />
-            </LazyLoad>
+
+            <img
+              width="100%"
+              height="100%"
+              className={loading ? "" : "border"}
+              src={TrainingBotImage}
+              alt="A project I worked on called Training Bot"
+              onLoad={e => setLoading(false)}
+            />
           </a>
           <div className="project-links">
             <a
@@ -96,15 +89,14 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             href="https://goodtimejournal.netlify.com/"
           >
             {loading && <div className="border loading-image"></div>}
-            <LazyLoad height={300} once>
-              <img
-                width="100%"
-                height="100%"
-                className={loading ? "" : "border"}
-                src={GoodTimeJournalImage}
-                alt="A project I worked on called Training Bot"
-              />
-            </LazyLoad>
+
+            <img
+              width="100%"
+              height="100%"
+              className={loading ? "" : "border"}
+              src={GoodTimeJournalImage}
+              alt="A project I worked on called Training Bot"
+            />
           </a>
           <div className="project-links">
             <a
