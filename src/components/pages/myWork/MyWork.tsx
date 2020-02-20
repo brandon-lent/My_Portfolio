@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 //Routing
 import { Link } from "react-router-dom";
@@ -12,6 +12,11 @@ import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.p
 interface MyWorkProps {}
 
 export const MyWork: React.FC<MyWorkProps> = () => {
+  const [loading, setLoading] = useState(true);
+
+  const changeLoadingState = () => {
+    setLoading(false);
+  };
   return (
     <div className="my-work">
       <h2>My Public Work</h2>
@@ -30,13 +35,15 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             rel="noopener noreferrer"
             href="https://www.trainingbot.co"
           >
+            {loading && <div className="border loading-image"></div>}
             <LazyLoad height={500} once>
               <img
                 width="100%"
                 height="100%"
-                className="border"
+                className={loading ? "" : "border"}
                 src={TrainingBotImage}
                 alt="A project I worked on called Training Bot"
+                onLoad={e => setLoading(false)}
               />
             </LazyLoad>
           </a>
@@ -88,11 +95,12 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             rel="noopener noreferrer"
             href="https://goodtimejournal.netlify.com/"
           >
+            {loading && <div className="border loading-image"></div>}
             <LazyLoad height={300} once>
               <img
                 width="100%"
                 height="100%"
-                className="border"
+                className={loading ? "" : "border"}
                 src={GoodTimeJournalImage}
                 alt="A project I worked on called Training Bot"
               />
