@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 // Routing
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 // Logo
-import DarkLogo from "../../assets/Logo/DarkLogo.png";
-import LightLogo from "../../assets/Logo/LightLogo.png";
+import DarkLogo from '../../assets/Logo/DarkLogo.png';
+import LightLogo from '../../assets/Logo/LightLogo.png';
 //Theme Icons
-import SunIcon from "../../assets/sun.png";
-import MoonIcon from "../../assets/night.png";
+import SunIcon from '../../assets/sun.png';
+import MoonIcon from '../../assets/night.png';
 
 interface NavigationProps {
   isLightTheme: boolean;
@@ -25,12 +25,12 @@ export const Navigation: React.FC<NavigationProps> = ({
         <li>
           <Link to="/">
             <img
-              className={isLightTheme ? "hide" : ""}
+              className={isLightTheme ? 'hide' : ''}
               src={LightLogo}
               alt="Brandon Lent, Software Developer, Logo."
             />
             <img
-              className={isLightTheme ? "" : "hide"}
+              className={isLightTheme ? '' : 'hide'}
               src={DarkLogo}
               alt="Brandon Lent, Software Developer, Logo."
             />
