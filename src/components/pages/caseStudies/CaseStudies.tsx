@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
-import { SearchBar } from "../../General/SearchBar";
-// import { Tag } from "../../General/Tag";
-// Writings JSON file
-import { writings } from "./writings/writings";
+import { Writing } from "./writing/Writing";
+
+// Import Markdown Files
+import Markdown from "markdown-to-jsx";
 
 interface CaseStudiesProps {}
 
 export const CaseStudies: React.FC<CaseStudiesProps> = () => {
-  const [search, setSearch] = useState("");
+  const [writing, setWriting] = useState({});
+
   return (
     <div className="caseStudies">
       <h2>Writing</h2>
@@ -23,7 +24,9 @@ export const CaseStudies: React.FC<CaseStudiesProps> = () => {
         >
           here
         </a>
+        <Markdown />
       </p>
+
       {/* <section>
         <SearchBar search={search} setSearch={setSearch} />
       </section> */}

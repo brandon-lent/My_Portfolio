@@ -1,44 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio
 
-## Available Scripts
+At the beginning of 2020, I decided to redesign my portfolio from the ground-up. Previously, I used an HTML template that served static HTML.
 
-In the project directory, you can run:
+I have three goals I want to accomplish with this project:
 
-### `yarn start`
+1. To serve as a reference to my best work.
+2. To have a robust, custom writing management system I can post future articles on.
+3. To test new technological implementations.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 1. Displaying My Work
 
-### `yarn test`
+An important aspect of my portfolio is to display my work to potential clients/employers. I created this website with the intentions of being easy to use and find my best work.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How I Solved This Problem
 
-### `yarn build`
+#### Custom Component Library
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I created a custom component library for this project (and potential future projects!).
+This library allows me to do two things:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Easily reuse common components across the application.
+- Allow for project-wide style definitions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is what allowed me to easily implement dark-mode into the application as seen below:
 
-### `yarn eject`
+##### Light Mode
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![My portfolio's landing page in light mode](readme_assets/landing-light.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Dark Mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![My portfolio's landing page in dark mode](readme_assets/landing-dark.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+#### Straight-Forward Navigation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once a user navigates to the landing page, they have two ways to access my work:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Easily Find My Work
+
+![Highlighting the two links to access my work](readme_assets/accessing-my-work.png)
+
+#### Display What Matters
+
+I believe that keeping things simple, is typically the best choice in most scenarios. I utilized this belief when designing the `My Work` page.
+
+I only want to display what is most relevant and allows the user to easily learn more about a specific project.
+
+##### Project From My Work
+
+![The design of my work page.](readme_assets/my-work.png)
+
+Two key aspects of this user interface are:
+
+- Allowing users to view the project by clicking either the image or the `View Project` link.
+- Allowing users to find more information about the project by clicking on `View Code` or `View Development Journal`
+
+---
+
+## 2. Robust Content Management System
+
+This feature is currently in progress. I will update this as I build out the feature more.
+
+## 3. Testing New Technology
+
+Creating a project that I am maintaining myself allows me to make all design decisions. This allows me to test technology that I have not used before, such as TypeScript.
+
+Some key technologies and implementations that I follow are:
+
+- Using TypeScript to type check my code as well as follow a consistent code style.
+- Using SCSS and utilizing mixins and variables that are coupled to components, which allow me to style and theme components quickly and effieciently(I typically `Styled Components` on most of my projects).
+
+I may also add new technologies or styling guidelines to my project in the future, particularly when I start implementation of my Robust Content Management System.
