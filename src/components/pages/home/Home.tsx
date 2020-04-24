@@ -24,7 +24,7 @@ export const Home: React.FC<HomeProps> = () => {
         </Link>
         <a href="https://blog.brandon-lent.com" className="linkblock">
           <div className="linkImage" />
-          Read my writings
+          See my blog
         </a>
         <a href="mailto:Hello@Brandonlent.com" className="linkblock">
           <div className="linkImage" />

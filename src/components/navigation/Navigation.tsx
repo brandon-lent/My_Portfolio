@@ -33,7 +33,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         </li>
         <li>
           <a className="hover-border" href="https://blog.brandon-lent.com">
-            Writing
+            Blog
           </a>
         </li>
         {/* <li>
