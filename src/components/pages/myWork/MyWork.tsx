@@ -63,7 +63,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               className="linkblock"
               target="blank"
               rel="noopener noreferrer"
-              href="https://medium.com/@blent1050"
+              href="https://blog.brandon-lent.com/blog/2020/04/reflection-training-bot/"
             >
               <div className="linkImage" />
               View Development Journal
