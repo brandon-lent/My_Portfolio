@@ -10,7 +10,8 @@ export const Home: React.FC<HomeProps> = () => {
     <div className="homepage">
       <section>
         <h2>My name is Brandon</h2>
-        <p>I'm a software developer that believes the details matter.</p>
+        <p>I'm a Software Developer living in Florida 🏝</p>
+        <br />
         <p>
           Creating elegant and thoughtful software products fuel my goals of
           continual improvement and client satisfaction.
