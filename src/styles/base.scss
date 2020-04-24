@@ -50,7 +50,7 @@
     }
   }
   .linkImage {
-    background-image: url('../assets/lightLink.png');
+    background-image: url("../assets/lightLink.png");
   }
   .hover-border {
     @include borderAnimation($dark-font-color);
@@ -62,6 +62,6 @@
     border: 2px solid $dark-font-color;
   }
   .searchBarIcon {
-    background-image: url('../assets/searchDark.png');
+    background-image: url("../assets/searchDark.png");
   }
 }

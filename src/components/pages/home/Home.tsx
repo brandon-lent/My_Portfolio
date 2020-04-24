@@ -21,10 +21,10 @@ export const Home: React.FC<HomeProps> = () => {
           <div className="linkImage" />
           See my work
         </Link>
-        <Link to="/case-studies" className="linkblock">
+        <a href="https://blog.brandon-lent.com" className="linkblock">
           <div className="linkImage" />
           Read my writings
-        </Link>
+        </a>
         <a href="mailto:Hello@Brandonlent.com" className="linkblock">
           <div className="linkImage" />
           Contact me

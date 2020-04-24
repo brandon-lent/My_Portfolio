@@ -37,7 +37,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               className={loading ? "" : "border"}
               src={TrainingBotImage}
               alt="A project I worked on called Training Bot"
-              onLoad={e => setLoading(false)}
+              onLoad={(e) => setLoading(false)}
             />
           </a>
           <div className="project-links">
@@ -96,7 +96,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               className={loading ? "" : "border"}
               src={GoodTimeJournalImage}
               alt="A project I worked on called Training Bot"
-              onLoad={e => setLoading(false)}
+              onLoad={(e) => setLoading(false)}
             />
           </a>
           <div className="project-links">
@@ -118,14 +118,14 @@ export const MyWork: React.FC<MyWorkProps> = () => {
               <div className="linkImage" />
               View Code
             </a>
-            <Link
+            <a
               className="linkblock"
               rel="noopener noreferrer"
-              to="/case-studies/goodtimejournal"
+              href="https://blog.brandon-lent.com/blog/2020/02/reflection-good-time-journal/"
             >
               <div className="linkImage" />
-              Case Study
-            </Link>
+              View Development Journal
+            </a>
           </div>
         </div>
       </section>

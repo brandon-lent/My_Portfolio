@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 // Routing
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-// Logo
-import DarkLogo from '../../assets/Logo/DarkLogo.png';
-import LightLogo from '../../assets/Logo/LightLogo.png';
 //Theme Icons
-import SunIcon from '../../assets/sun.png';
-import MoonIcon from '../../assets/night.png';
+import SunIcon from "../../assets/sun.png";
+import MoonIcon from "../../assets/night.png";
 
 interface NavigationProps {
   isLightTheme: boolean;
@@ -17,23 +14,14 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({
   isLightTheme,
-  setIsLightTheme
+  setIsLightTheme,
 }) => {
   return (
     <nav className="navbar">
       <ul>
         <li>
-          <Link to="/">
-            <img
-              className={isLightTheme ? 'hide' : ''}
-              src={LightLogo}
-              alt="Brandon Lent, Software Developer, Logo."
-            />
-            <img
-              className={isLightTheme ? '' : 'hide'}
-              src={DarkLogo}
-              alt="Brandon Lent, Software Developer, Logo."
-            />
+          <Link className="hover-border nav-title" to="/">
+            Brandon Lent
           </Link>
         </li>
       </ul>
@@ -44,9 +32,9 @@ export const Navigation: React.FC<NavigationProps> = ({
           </Link>
         </li>
         <li>
-          <Link className="hover-border" to="/case-studies">
+          <a className="hover-border" href="https://blog.brandon-lent.com">
             Writing
-          </Link>
+          </a>
         </li>
         {/* <li>
           <Link className="hover-border" to="/contact">

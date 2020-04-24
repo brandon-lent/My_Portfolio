@@ -8,7 +8,6 @@ import { Navigation } from "./components/navigation/Navigation";
 import { Home } from "./components/pages/home/Home";
 import { Contact } from "./components/pages/contact/Contact";
 import { MyWork } from "./components/pages/myWork/MyWork";
-import { CaseStudies } from "./components/pages/caseStudies/CaseStudies";
 import { About } from "./components/pages/about/About";
 import { Footer } from "./components/footer/Footer";
 
@@ -49,9 +48,6 @@ const App: React.FC = () => {
             <Route path="/my-work">
               <MyWork />
             </Route>
-            <Route path="/case-studies">
-              <CaseStudies />
-            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -68,10 +64,10 @@ export default App;
 const socials = [
   {
     website: "LinkedIn",
-    URL: "https://www.linkedin.com/in/brandon-lent/"
+    URL: "https://www.linkedin.com/in/brandon-lent/",
   },
   {
     website: "Github",
-    URL: "https://github.com/Blent1050"
-  }
+    URL: "https://github.com/Blent1050",
+  },
 ];
