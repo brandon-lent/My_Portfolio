@@ -32,7 +32,11 @@ export const Navigation: React.FC<NavigationProps> = ({
           </Link>
         </li>
         <li>
-          <a className="hover-border" href="https://blog.brandon-lent.com">
+          <a
+            target="blank"
+            className="hover-border"
+            href="https://blog.brandon-lent.com"
+          >
             Blog
           </a>
         </li>

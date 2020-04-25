@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
-
-//Routing
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
 import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
@@ -76,7 +73,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
           <hr />
           <p className="project-description">
             Based off Stanfords{" "}
-            <a href="http://lifedesignlab.stanford.edu/">
+            <a target="blank" href="http://lifedesignlab.stanford.edu/">
               <span className="italic inlineLinkBlock">Design Your Life</span>
             </a>{" "}
             class, Good Time Journal aims to deliver an experience that empowers
@@ -121,6 +118,7 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             <a
               className="linkblock"
               rel="noopener noreferrer"
+              target="blank"
               href="https://blog.brandon-lent.com/blog/2020/02/reflection-good-time-journal/"
             >
               <div className="linkImage" />

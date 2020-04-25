@@ -8,14 +8,13 @@ import { Navigation } from "./components/navigation/Navigation";
 import { Home } from "./components/pages/home/Home";
 import { Contact } from "./components/pages/contact/Contact";
 import { MyWork } from "./components/pages/myWork/MyWork";
-import { About } from "./components/pages/about/About";
 import { Footer } from "./components/footer/Footer";
 
 // Util
 import { customLog } from "./util/customLog";
 
 const App: React.FC = () => {
-  const [isLightTheme, setisLightTheme] = useState<boolean>(true);
+  const [isLightTheme, setisLightTheme] = useState<boolean>(false);
 
   // Prevents console from re-running on component re-renders.
   useEffect(() => {
@@ -47,9 +46,6 @@ const App: React.FC = () => {
             </Route>
             <Route path="/my-work">
               <MyWork />
-            </Route>
-            <Route path="/about">
-              <About />
             </Route>
           </Switch>
         </div>
