@@ -22,7 +22,11 @@ export const Home: React.FC<HomeProps> = () => {
           <div className="linkImage" />
           See my work
         </Link>
-        <a href="https://blog.brandon-lent.com" className="linkblock">
+        <a
+          target="blank"
+          href="https://blog.brandon-lent.com"
+          className="linkblock"
+        >
           <div className="linkImage" />
           See my blog
         </a>

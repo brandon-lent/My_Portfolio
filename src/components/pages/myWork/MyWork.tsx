@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import TrioHubImage from "../../../assets/MyWorkImages/triohub.png";
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
 import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
 
@@ -12,6 +13,64 @@ export const MyWork: React.FC<MyWorkProps> = () => {
     <div className="my-work">
       <h2>My Public Work</h2>
       <section className="recent-work">
+        <div className="work-project">
+          <h4 className="bold">Triohub</h4>
+          <hr />
+          <p className="project-description">
+            Triohub aims to help people who are relocating organize their
+            apartment/housing searching efforts.
+          </p>
+          <a
+            className="remove-attr"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.triohub.io"
+          >
+            {loading && <div className="border loading-image"></div>}
+
+            <img
+              width="100%"
+              height="100%"
+              className={loading ? "" : "border"}
+              src={TrioHubImage}
+              alt="A project I helped create called Triohub"
+              onLoad={(e) => setLoading(false)}
+            />
+          </a>
+          <div className="project-links">
+            <p style={{ fontSize: "14px" }}>
+              * This is a private repository. If you would like a walkthrough of
+              the code, please send me an email at{" "}
+              <a
+                href="mailto:Hello@Brandonlent.com"
+                style={{ fontSize: "14px" }}
+                className="inlineLinkBlock"
+              >
+                hello@brandonlent.com
+              </a>
+              *
+            </p>
+            <a
+              className="linkblock"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.triohub.io"
+            >
+              <div className="linkImage" />
+              View Project
+            </a>
+
+            {/* <a
+              className="linkblock"
+              target="blank"
+              rel="noopener noreferrer"
+              href="https://blog.brandon-lent.com/blog/2020/04/reflection-training-bot/"
+            >
+              <div className="linkImage" />
+              View Development Journal
+            </a> */}
+          </div>
+        </div>
         <div className="work-project">
           <h4 className="bold">Training Bot</h4>
           <hr />
