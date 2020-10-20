@@ -72,6 +72,6 @@ Creating a project that I am maintaining myself allows me to make all design dec
 Some key technologies and implementations that I follow are:
 
 - Using TypeScript to type check my code as well as follow a consistent code style.
-- Using SCSS and utilizing mixins and variables that are coupled to components, which allow me to style and theme components quickly and effieciently(I typically `Styled Components` on most of my projects).
+- Using SCSS and utilizing mixins and variables that are coupled to components, which allow me to style and theme components quickly and effieciently(I typically used `Styled Components` on most of my projects).
 
 I may also add new technologies or styling guidelines to my project in the future, particularly when I start implementation of my Robust Content Management System.
