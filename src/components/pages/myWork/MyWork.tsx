@@ -4,7 +4,7 @@ import TrioHubImage from "../../../assets/MyWorkImages/triohub.png";
 import TrainingBotImage from "../../../assets/MyWorkImages/trainingbot.png";
 import GoodTimeJournalImage from "../../../assets/MyWorkImages/goodtimejournal.png";
 
-interface MyWorkProps {}
+interface MyWorkProps { }
 
 export const MyWork: React.FC<MyWorkProps> = () => {
   const [loading, setLoading] = useState(true);
@@ -14,9 +14,8 @@ export const MyWork: React.FC<MyWorkProps> = () => {
       <h2>My Public Work</h2>
       <section className="recent-work">
         <div className="work-project">
-          <h4 className="bold">Triohub</h4>
-          <hr />
-          <p className="project-description">
+          <h4 className="bold" style={{ paddingBottom: '0' }}>Triohub</h4>
+          <p className="project-description" style={{ paddingBottom: '0' }}>
             Triohub aims to help people who are relocating organize their
             apartment/housing searching efforts.
           </p>
@@ -38,18 +37,6 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             />
           </a>
           <div className="project-links">
-            <p style={{ fontSize: "14px" }}>
-              * This is a private repository. If you would like a walkthrough of
-              the code, please send me an email at{" "}
-              <a
-                href="mailto:Hello@Brandonlent.com"
-                style={{ fontSize: "14px" }}
-                className="inlineLinkBlock"
-              >
-                hello@brandonlent.com
-              </a>
-              *
-            </p>
             <a
               className="linkblock"
               target="_blank"
@@ -72,9 +59,8 @@ export const MyWork: React.FC<MyWorkProps> = () => {
           </div>
         </div>
         <div className="work-project">
-          <h4 className="bold">Training Bot</h4>
-          <hr />
-          <p className="project-description">
+          <h4 className="bold" style={{ paddingBottom: '0' }}>Training Bot</h4>
+          <p className="project-description" style={{ paddingBottom: '0' }}>
             Training Bot is a web application that helps teams stay in sync with
             optional and required trainings. Our bot will send automated
             notifications to specified team members.
@@ -126,12 +112,10 @@ export const MyWork: React.FC<MyWorkProps> = () => {
             </a>
           </div>
         </div>
-
         <div className="work-project">
-          <h4 className="bold">Good Time Journal</h4>
-          <hr />
-          <p className="project-description">
-            Based off Stanfords{" "}
+          <h4 className="bold" style={{ paddingBottom: '0' }}>Good Time Journal</h4>
+          <p className="project-description" style={{ paddingBottom: '0' }}>
+            Based off Stanford's{" "}
             <a target="blank" href="http://lifedesignlab.stanford.edu/">
               <span className="italic inlineLinkBlock">Design Your Life</span>
             </a>{" "}

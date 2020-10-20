@@ -3,14 +3,14 @@ import React from "react";
 // Routing
 import { Link } from "react-router-dom";
 
-interface HomeProps {}
+interface HomeProps { }
 
 export const Home: React.FC<HomeProps> = () => {
   return (
     <div className="homepage">
       <section>
         <h2>My name is Brandon</h2>
-        <p>I'm a Software Developer living in Florida 🏝</p>
+        <p>I'm a Software Developer living in Florida 🌴</p>
         <br />
         <p>
           Creating elegant and thoughtful software products fuel my goals of

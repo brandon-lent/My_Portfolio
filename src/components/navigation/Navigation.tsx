@@ -28,7 +28,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       <ul>
         <li>
           <Link className="hover-border" to="/my-work">
-            My Work
+            Web Development
           </Link>
         </li>
         <li>

@@ -14,7 +14,7 @@ import { Footer } from "./components/footer/Footer";
 import { customLog } from "./util/customLog";
 
 const App: React.FC = () => {
-  const [isLightTheme, setisLightTheme] = useState<boolean>(false);
+  const [isLightTheme, setisLightTheme] = useState<boolean>(true);
 
   // Prevents console from re-running on component re-renders.
   useEffect(() => {
