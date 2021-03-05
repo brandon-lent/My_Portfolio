@@ -47,6 +47,9 @@ const App: React.FC = () => {
             <Route path="/my-work">
               <MyWork />
             </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
           </Switch>
         </div>
         <Footer />

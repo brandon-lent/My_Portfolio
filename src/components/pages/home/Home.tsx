@@ -30,10 +30,10 @@ export const Home: React.FC<HomeProps> = () => {
           <div className="linkImage" />
           See my blog
         </a>
-        <a href="mailto:Hello@Brandonlent.com" className="linkblock">
+        <Link to="/contact" className="linkblock">
           <div className="linkImage" />
           Contact me
-        </a>
+        </Link>
       </section>
     </div>
   );
