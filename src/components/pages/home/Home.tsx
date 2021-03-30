@@ -24,13 +24,13 @@ export const Home: React.FC<HomeProps> = () => {
         </Link>
         <a
           target="blank"
-          href="https://blog.brandon-lent.com"
+          href="https://world.hey.com/brandonlent"
           className="linkblock"
         >
           <div className="linkImage" />
           See my blog
         </a>
-        <a href="mailto:blent1050@gmail.com" className="linkblock">
+        <a href="mailto:brandonlent@hey.com" className="linkblock">
           <div className="linkImage" />
           Contact me
         </a>

@@ -28,14 +28,14 @@ export const Navigation: React.FC<NavigationProps> = ({
       <ul>
         <li>
           <Link className="hover-border" to="/my-work">
-            Web Development
+            Projects
           </Link>
         </li>
         <li>
           <a
             target="blank"
             className="hover-border"
-            href="https://blog.brandon-lent.com"
+            href="https://world.hey.com/brandonlent"
           >
             Blog
           </a>
