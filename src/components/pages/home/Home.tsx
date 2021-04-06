@@ -30,7 +30,7 @@ export const Home: React.FC<HomeProps> = () => {
           <div className="linkImage" />
           See my blog
         </a>
-        <a target="_blank" href="https://www.notion.so/brandonlent/Resume-f41459f115fd4cd2b2190890e57b1a1b" className="linkblock">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.notion.so/brandonlent/Resume-f41459f115fd4cd2b2190890e57b1a1b" className="linkblock">
           <div className="linkImage" />
           Resume
         </a>
